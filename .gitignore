@@ -1,0 +1,55 @@
+# --- 敏感信息（绝对不要提交）---
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.*
+secrets/
+config.local.*
+
+# --- 编译产物 ---
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+*.dylib
+*.mod
+*.smod
+
+# --- 构建目录 ---
+build/
+dist/
+bin/
+lib/
+cmake-build-*/
+Makefile
+!Makefile.*
+*.mk
+
+# --- HPC / 运行时输出 ---
+slurm-*.out
+slurm-*.err
+*.log
+results/*.dat
+results/*.txt
+!results/README.md
+
+# --- IDE / 系统 ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Python（如果用到）---
+__pycache__/
+*.pyc
+.venv/
+venv/
